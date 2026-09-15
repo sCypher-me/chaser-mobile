@@ -1,0 +1,16 @@
+node_modules/
+.pnpm-store/
+dist/
+.env
+android/.gradle/
+android/app/build/
+*.jks
+*.keystore
+playwright-report/
+test-results/
+*.tsbuildinfo
+GCDC Meta Spreadsheet.xlsx
+android/app/src/main/assets/public/
+reports/import-report.json
+reports/import-report.md
+public/assets/imported/

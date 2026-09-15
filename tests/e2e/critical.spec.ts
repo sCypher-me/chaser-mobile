@@ -1,0 +1,2 @@
+import { expect, test } from '@playwright/test'
+test('navegação e busca principal',async({page})=>{await page.goto('/');await expect(page.getByRole('heading',{name:/Domine cada dimensão/i})).toBeVisible();await page.getByRole('link',{name:/explorar heróis/i}).click();await expect(page.getByRole('heading',{name:'Heróis'})).toBeVisible();await page.getByPlaceholder('Buscar herói…').fill('Arme');await expect(page.getByRole('link',{name:/Arme \(T\)/}).first()).toBeVisible()})

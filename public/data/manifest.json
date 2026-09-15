@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.09.13.1",
+  "generatedAt": "2026-09-13T12:50:02.080Z",
+  "checksum": "e95051e0602b5ab77bf102f12cf0da75dc1bc5f325c04d931896299287e23895",
+  "files": {
+    "heroes.json": {
+      "checksum": "6f5629241790b618ba4a8573ed0910268b8f5ecc7c976a35fe3c10bb80cc3970",
+      "bytes": 47660
+    },
+    "builds.json": {
+      "checksum": "26e1a925fdf7c62359c6db69de8f9558e73dd0f34d790aaf29d47b6d51c67f4e",
+      "bytes": 60212
+    },
+    "contents.json": {
+      "checksum": "eccdfb77321027a5a0fe9c7aab09a4cb4668b74ed3cd15ad9fa9d12f9cef6649",
+      "bytes": 3896
+    },
+    "compositions.json": {
+      "checksum": "d916a8122e185927e948ae5599b829abb606a3f9be64c91dd3e4cd7afeb2676d",
+      "bytes": 53237
+    },
+    "equipment.json": {
+      "checksum": "42173ee0d5b407caf9f4bc90ba7c575179a207df76b0a10838e8b83aebb6f5f3",
+      "bytes": 4095
+    },
+    "guides.json": {
+      "checksum": "44368abff029dc0d29cd8fb10bdb9c2e61f9bd62b7e93252ad89abc2a0b32fb3",
+      "bytes": 53282
+    },
+    "changelog.json": {
+      "checksum": "f39141630085de1886ede9fdd4b43355b060c12597d40e850451f2c3339f5b41",
+      "bytes": 74267
+    },
+    "resources.json": {
+      "checksum": "145bd7f685bc1b3413d647daf59062f053152442a50c17a200f346e8dce2a300",
+      "bytes": 6354
+    },
+    "release-order.json": {
+      "checksum": "bb007fdf17cac33c61e94e1c08789fb9d1d8b20e618dd9b8d67ab5ec78d1d6f5",
+      "bytes": 15413
+    },
+    "pt-BR.json": {
+      "checksum": "b7866789e368fff5ed2f9ddf3fe2fbe9106337308db948c281e33d7d7b9b581e",
+      "bytes": 124670
+    }
+  }
+}

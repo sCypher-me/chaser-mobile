@@ -1,0 +1,33 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm validate:data
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm build
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 21 }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - run: pnpm exec cap sync android
+      - run: cd android && ./gradlew assembleDebug
+      - uses: actions/upload-artifact@v4
+        with: { name: gcdc-meta-debug-apk, path: android/app/build/outputs/apk/debug/app-debug.apk }
